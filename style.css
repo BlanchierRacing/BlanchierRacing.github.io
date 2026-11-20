@@ -21,6 +21,8 @@ html { scroll-behavior: smooth; }
 
 body {
     margin: 0;
+    min-width: 0;
+    overflow-x: hidden;
     background: var(--paper);
     color: var(--ink);
     font-family: 'DM Sans', Arial, sans-serif;
@@ -294,17 +296,44 @@ nav a:hover, nav a[aria-current="page"] { color: var(--yellow); }
 .contact-line:hover { background: #f6f7fb; }
 
 @media (max-width: 900px) {
-    .site-header { align-items: flex-start; }
-    nav ul { justify-content: flex-end; flex-wrap: wrap; gap: 10px 20px; padding-top: 7px; }
-    .hero { grid-template-columns: 1fr 1fr; }
-    .hero-copy { padding-left: 6vw; }
-    .numbers { grid-template-columns: repeat(3, 1fr); }
+    .site-header { align-items: flex-start; flex-wrap: wrap; padding-inline: 5vw; }
+    nav ul { justify-content: flex-end; flex-wrap: wrap; gap: 10px 18px; padding-top: 7px; }
+    .hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+    .hero-copy { min-width: 0; padding: 60px 7vw 60px 6vw; }
+    .hero h1 { font-size: clamp(42px, 7vw, 64px); }
+    .hero-visual { min-height: 480px; }
+    .hero-visual img { min-height: 480px; }
+    .numbers { grid-template-columns: repeat(3, minmax(0, 1fr)); padding-inline: 5vw; }
     .numbers p { grid-column: 1 / -1; }
     .section { padding: 80px 6vw; }
-    .intro-section, .story-section, .race-section, .calendar-section, .value-section { gap: 7%; }
+    .intro-section, .story-section, .race-section, .calendar-section, .value-section { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 7%; }
+    .team-grid { gap: 10px; }
+    .team-card { padding-inline: 18px; }
+    .boat-section { grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); }
+    .budget-section { gap: 7%; padding-inline: 6vw; }
+    .value-grid { gap: 16px; }
     .offers-grid { grid-template-columns: repeat(2, 1fr); }
     .offer-card { min-height: 280px; }
     .page-hero-copy { padding-left: 7vw; }
+    .page-hero h1 { font-size: clamp(48px, 8vw, 72px); }
+    .contact-hero { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); padding-inline: 6vw; }
+}
+
+@media (max-width: 760px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-copy { max-width: none; padding: 58px 7vw 46px; }
+    .hero-visual { min-height: 340px; }
+    .hero-visual img { min-height: 340px; height: 58vw; max-height: 480px; }
+    .page-hero { grid-template-columns: 1fr; }
+    .page-hero-copy { max-width: none; padding: 58px 7vw 42px; }
+    .page-hero > img { min-height: 330px; max-height: 500px; }
+    .intro-section, .story-section, .race-section, .calendar-section, .value-section { grid-template-columns: 1fr; gap: 24px; }
+    .partner-banner { grid-template-columns: 1fr; gap: 24px; }
+    .boat-section { grid-template-columns: 1fr; }
+    .boat-image { height: 58vw; max-height: 460px; }
+    .budget-section { grid-template-columns: 1fr; gap: 32px; }
+    .value-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .contact-hero { grid-template-columns: 1fr; gap: 35px; min-height: auto; }
 }
 
 @media (max-width: 640px) {
@@ -344,6 +373,7 @@ nav a:hover, nav a[aria-current="page"] { color: var(--yellow); }
     .team-grid { grid-template-columns: 1fr; }
     .team-card { min-height: 145px; }
     .team-card h3 { margin-top: 18px; }
+    .value-grid { grid-template-columns: 1fr; gap: 28px; }
     .race-facts { grid-template-columns: 1fr; }
     .race-facts div { min-height: 84px; }
     .boat-section { grid-template-columns: 1fr; }
