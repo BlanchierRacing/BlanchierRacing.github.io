@@ -3,59 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Louis Blanchier</title>
-    <link rel="stylesheet" href="style_project.css">
+    <meta name="description" content="Le projet Mini-Transat 2027 de Louis Blanchier : le bateau, le calendrier de préparation et le budget.">
+    <title>Le projet | Louis Blanchier</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1>Le projet</h1>
-            <nav>
-                <ul>
+    <header class="site-header">
+        <a class="wordmark" href="index.html" aria-label="Blanchier Racing, accueil">BLANCHIER <span>RACING</span></a>
+        <nav aria-label="Navigation principale">
+            <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">Le Skipper</a></li>
+                <li><a href="about.html">Le skipper</a></li>
+                <li><a href="project.html" aria-current="page">Le projet</a></li>
                 <li><a href="partners.html">Partenaires</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+            </ul>
+        </nav>
     </header>
-    <section>
-        <h2>Le parcours</h2>
-        <div class="flex-container">
-            <p style="font-weight: bold; font-style: italic;">La Mini-Transat se décompose en 2 étapes. <br>
-            La première étapes part de Vendée pour aller jusqu'au Canaries, c'est la plus petite des étapes mais c'est la plus technique. <br>
-            La deuxième étape part du Canaries pour aller jusqu'aux Antilles, c'est la grande traversée dans les Alyzés, un vent stable et chaud qui va des Canaries vers les Antilles.</p>
-            <img src="parcours.png" alt="parcour" class="image_project">
-        </div>
-        <h2>Le calendrier</h2>
-        <p style="font-weight: bold; font-style: italic;">Pour participer à la Mini-Transat, il faut avoir fait 1500 milles en course et 1000 milles hors course en solitaire.<br>
-    Je compte me préparer pendant 4 saisons avant la Transat !</p>
-        <img src="calendrier.png" alt="calendrier" class="image_calendrier">
-        <p style="font-weight: bold; font-style: italic;">Même si la transat est l'objectif finale de ce projet, <br>
-        toutes les courses qualificatives sont importantes pour progresser et fiabiliser le bateau.</p>
-        <h2>Le budget</h2>
-        <div class="flex-container">
-            <img src="budget.png" alt="budget" class="image_budget">
-            <p style="font-weight: bold; font-style: italic;">Le budget se décompose en deux catégories : les dépenses ponctuelles et les dépenses variables annuelles qui sont variables. <br>
-            Le gros des dépenses concerne la Mini-Transat car le retour en cargo, l'assurances transat ainsi que la fiabilisation du bateau représente 15000 €.</p>
-        </div>
-        <h2>Pourquoi devenir partenaires ?</h2>
-        <div class="flex-container">
-            <p style="font-weight: bold; font-style: italic;">Rayonnement externe <br>
-            Afficher l’image d’une entreprise performante, positive et compétitive qui sait se dépasser et se challenger avec des objectifs ambitieux mais réalistes. <br>
-            La Mini Transat est médiatisée et suivie par un public jeune et dynamique.<br>
-            Gagner en visibilité et notoriété. <br>Opportunité de séduire des jeunes profils voulant faire confiance à votre entreprise.</p>
-            <p style="font-weight: bold; font-style: italic;">Rayonnement interne <br>
-                Fédérer autour d’un projet sportif.<br>
-                Renforcer la cohésion et la motivation des collaborateurs.<br>
-                Montrer que l’entreprise est compréhensive des projets hors des sentiers battus.<br>
-                Opportunité d’animations au sein de l’entreprise (sorties en mer, jeu virtual regatta, conférences …).</p>
-        </div>
-    </section>
-    </section>
-    <footer>
-        <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
-        <p>&copy; 2025 Blanchier Racing. Tous droits réservés.</p>
+    <main>
+        <section class="page-hero project-hero">
+            <div class="page-hero-copy">
+                <p class="eyebrow eyebrow-blue">Le projet</p>
+                <h1>Seul en mer.<br>Jamais seul<br>dans le projet.</h1>
+                <p class="page-lead">Un objectif sportif construit étape par étape : préparer le bateau, progresser sur le circuit Mini, valider la qualification et prendre le départ en 2027.</p>
+                <a class="arrow-link" href="partners.html">Associer votre entreprise au projet <span aria-hidden="true">↗</span></a>
+            </div>
+            <img src="DSC09944.jpg" alt="Le Mini 6.50 numéro 626 en navigation">
+        </section>
+        <section class="section race-section">
+            <div class="section-heading">
+                <p class="eyebrow eyebrow-blue">Le format de la course</p>
+                <h2>4 000 milles<br>vers l'inconnu.</h2>
+            </div>
+            <div class="race-content">
+                <p>La Mini-Transat réunit près de 90 marins sur des voiliers de 6,50 mètres. En solitaire et sans assistance, les concurrents traversent l'Atlantique sur environ 4 000 milles. La navigation peut durer près de 30 jours.</p>
+                <div class="race-facts">
+                    <div><strong>6,50 m</strong><span>un bateau de poche</span></div>
+                    <div><strong>~4 000</strong><span>milles de course</span></div>
+                    <div><strong>~30 jours</strong><span>en mer, en solitaire</span></div>
+                </div>
+            </div>
+        </section>
+        <section class="boat-section">
+            <div class="boat-image">
+                <img src="DSC09957.jpg" alt="Le voilier Mini 6.50 de Louis Blanchier sur l'eau">
+            </div>
+            <div class="boat-copy">
+                <p class="eyebrow">Le bateau</p>
+                <h2>Un Mini.<br>Un vrai marin.</h2>
+                <p>Mon bateau est un Pogo 2 construit en 2005 par le chantier Pogo Structures. Bateau de série robuste et éprouvé, il a déjà pris deux fois le départ de la Mini-Transat.</p>
+                <p>Le préparer, l'entretenir et apprendre à en tirer le meilleur font partie intégrante du défi.</p>
+            </div>
+        </section>
+        <section class="section calendar-section">
+            <div class="section-heading">
+                <p class="eyebrow eyebrow-blue">Le calendrier</p>
+                <h2>Une ambition,<br>des étapes concrètes.</h2>
+            </div>
+            <div class="timeline">
+                <article class="timeline-row">
+                    <span class="timeline-year">2024</span>
+                    <div><h3>Achat et préparation</h3><p>Prise en main du bateau et premiers pas sur le circuit Mini.</p></div>
+                    <span class="timeline-tag">Lancement</span>
+                </article>
+                <article class="timeline-row">
+                    <span class="timeline-year">2025</span>
+                    <div><h3>Entraînement et courses</h3><p>Progresser en course et poursuivre la qualification en solitaire.</p></div>
+                    <span class="timeline-tag">Progression</span>
+                </article>
+                <article class="timeline-row">
+                    <span class="timeline-year">2026</span>
+                    <div><h3>Saison de préparation</h3><p>Courses, entraînement et participation à la SAS 2026.</p></div>
+                    <span class="timeline-tag">Qualification</span>
+                </article>
+                <article class="timeline-row timeline-highlight">
+                    <span class="timeline-year">2027</span>
+                    <div><h3>Mini-Transat</h3><p>Prendre le départ de la traversée de l'Atlantique en solitaire.</p></div>
+                    <span class="timeline-tag">Le grand départ</span>
+                </article>
+            </div>
+        </section>
+        <section class="budget-section">
+            <div class="budget-copy">
+                <p class="eyebrow">Le budget sur 4 ans</p>
+                <h2>131 600 €<br>pour aller au bout.</h2>
+                <p>Le budget couvre l'achat et l'équipement du bateau, les voiles, l'entretien, la formation, les places de port, les assurances et les inscriptions aux courses.</p>
+            </div>
+            <div class="budget-numbers">
+                <div><strong>74 000 €</strong><span>investissements ponctuels</span></div>
+                <div><strong>14 400 €</strong><span>budget annuel de fonctionnement</span></div>
+                <div><strong>57 600 €</strong><span>fonctionnement sur 4 saisons</span></div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <a class="wordmark" href="index.html">BLANCHIER <span>RACING</span></a>
+        <p>Louis Blanchier · Objectif Mini-Transat 2027</p>
+        <a href="mailto:louis@blanchier.com">louis@blanchier.com</a>
     </footer>
 </body>
+</html>
