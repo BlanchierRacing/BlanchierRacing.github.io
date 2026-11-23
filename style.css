@@ -255,9 +255,11 @@ nav a:hover, nav a[aria-current="page"] { color: var(--yellow); }
 .budget-numbers strong { white-space: nowrap; font: 800 clamp(19px, 2.5vw, 26px)/1.2 'Manrope', Arial, sans-serif; }
 .budget-numbers span { color: #e4e9f4; font-size: 12px; text-align: right; }
 
-.partners-hero { padding: 100px max(8vw, calc((100vw - var(--content)) / 2)); background: var(--navy); color: white; }
+.partners-hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 520px; background: var(--navy); color: white; }
+.partners-hero-copy { align-self: center; max-width: 650px; padding: 80px 10% 80px max(8vw, calc((100vw - var(--content)) / 2)); }
 .partners-hero h1 { max-width: 760px; font-size: clamp(58px, 8vw, 100px); }
 .partners-hero .page-lead { max-width: 630px; margin-bottom: 30px; color: #d5dce7; }
+.partners-hero > img { width: 100%; height: 100%; min-height: 520px; max-height: 680px; object-fit: cover; }
 .value-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
 .value-grid article { padding-top: 18px; border-top: 2px solid var(--blue); }
 .value-grid h3 { margin: 21px 0 9px; font-size: 19px; }
@@ -316,6 +318,7 @@ nav a:hover, nav a[aria-current="page"] { color: var(--yellow); }
     .offer-card { min-height: 280px; }
     .page-hero-copy { padding-left: 7vw; }
     .page-hero h1 { font-size: clamp(48px, 8vw, 72px); }
+    .partners-hero-copy { padding-left: 7vw; }
     .contact-hero { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); padding-inline: 6vw; }
 }
 
@@ -327,6 +330,9 @@ nav a:hover, nav a[aria-current="page"] { color: var(--yellow); }
     .page-hero { grid-template-columns: 1fr; }
     .page-hero-copy { max-width: none; padding: 58px 7vw 42px; }
     .page-hero > img { min-height: 330px; max-height: 500px; }
+    .partners-hero { grid-template-columns: 1fr; }
+    .partners-hero-copy { max-width: none; padding: 58px 7vw 42px; }
+    .partners-hero > img { min-height: 330px; max-height: 500px; }
     .intro-section, .story-section, .race-section, .calendar-section, .value-section { grid-template-columns: 1fr; gap: 24px; }
     .partner-banner { grid-template-columns: 1fr; gap: 24px; }
     .boat-section { grid-template-columns: 1fr; }
@@ -386,7 +392,9 @@ nav a:hover, nav a[aria-current="page"] { color: var(--yellow); }
     .budget-section { grid-template-columns: 1fr; gap: 32px; padding: 58px 7vw; }
     .budget-numbers div { align-items: flex-start; }
     .budget-numbers span { max-width: 150px; }
-    .partners-hero { padding: 70px 7vw; }
+    .partners-hero { grid-template-columns: 1fr; }
+    .partners-hero-copy { padding: 64px 7vw 43px; }
+    .partners-hero > img { min-height: 300px; max-height: 440px; }
     .partners-hero h1 { font-size: 61px; }
     .offers-section { padding: 66px 7vw; }
     .offers-grid { grid-template-columns: 1fr; }
